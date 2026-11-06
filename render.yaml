@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: baggyfit
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/config
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: ADMIN_PASSWORD
+        generateValue: true
+      - key: WHATSAPP
+        value: "919999999999"

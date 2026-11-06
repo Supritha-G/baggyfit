@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Baggy Fit — Own Your Look | Oversized Tees, Polos, Sweatshirts & Denim</title>
+<meta name="description" content="Baggy Fit: premium oversized tees, polos, sweatshirts and denim jackets for men. Free shipping above ₹1,499, cash on delivery and easy exchanges across India.">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="icon" href="/img/icon.png">
+<meta property="og:title" content="Baggy Fit — Own Your Look">
+<meta property="og:description" content="Premium oversized streetwear for men. Shipped across India.">
+<meta property="og:image" content="/img/tees-pile.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="announce" id="announce"></div>
+<header class="header" id="header">
+  <div class="wrap header-in">
+    <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg></button>
+    <a href="/" data-link class="logo" aria-label="Baggy Fit home"><img src="/img/logo.png" alt="Baggy Fit — Own your look" width="150" height="81"></a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="/shop" data-link>Shop all</a>
+      <a href="/shop?cat=tees" data-link>Tees</a>
+      <a href="/shop?cat=polos" data-link>Polos</a>
+      <a href="/shop?cat=sweatshirts" data-link>Sweatshirts</a>
+      <a href="/shop?cat=jackets" data-link>Jackets</a>
+      <a href="/about" data-link>Our story</a>
+    </nav>
+    <div class="actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Search"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+      <a class="icon-btn" href="/wishlist" data-link aria-label="Wishlist"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 20s-7-4.4-9-9a5 5 0 0 1 9-3 5 5 0 0 1 9 3c-2 4.6-9 9-9 9Z"/></svg><span class="badge" id="wishCount" hidden></span></a>
+      <a class="icon-btn" href="/account" data-link aria-label="Account"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg></a>
+      <button class="icon-btn" id="cartBtn" aria-label="Open cart"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="badge" id="cartCount" hidden>0</span></button>
+    </div>
+  </div>
+  <form class="searchbar" id="searchbar" hidden role="search"><div class="wrap"><input id="searchInput" type="search" placeholder="Search tees, polos, sweatshirts…" autocomplete="off" aria-label="Search products"><button class="btn sm" type="submit">Search</button></div></form>
+</header>
+
+<main id="main" tabindex="-1"></main>
+
+<footer class="footer">
+  <div class="wrap foot-grid">
+    <div>
+      <img src="/img/logo.png" alt="Baggy Fit" width="160" height="87" loading="lazy">
+      <p class="muted">Oversized fits, bold graphics and everyday essentials — designed to help you own your look.</p>
+      <form class="news" id="newsForm"><input type="email" required placeholder="Your email for drops & offers" aria-label="Email"><button class="btn accent sm">Join</button></form>
+      <p class="news-msg" id="newsMsg" role="status"></p>
+    </div>
+    <div><h4>Shop</h4><a href="/shop" data-link>All products</a><a href="/shop?cat=tees" data-link>Oversized tees</a><a href="/shop?cat=polos" data-link>Polos</a><a href="/shop?cat=sweatshirts" data-link>Sweatshirts</a><a href="/shop?cat=jackets" data-link>Denim jackets</a></div>
+    <div><h4>Help</h4><a href="/track" data-link>Track order</a><a href="/policy/shipping" data-link>Shipping</a><a href="/policy/returns" data-link>Exchanges & returns</a><a href="/policy/size-guide" data-link>Size guide</a><a href="/contact" data-link>Contact us</a></div>
+    <div><h4>Visit us</h4><p class="muted" id="footAddr"></p><a id="footWa" target="_blank" rel="noopener">Chat on WhatsApp</a><a id="footMail"></a></div>
+  </div>
+  <div class="wrap foot-bottom"><span>© <span id="yr"></span> Baggy Fit. All rights reserved.</span><span><a href="/policy/privacy" data-link>Privacy</a> · <a href="/policy/terms" data-link>Terms</a></span></div>
+</footer>
+
+<div class="overlay" id="overlay" hidden></div>
+<aside class="drawer" id="drawer" aria-label="Shopping cart" aria-hidden="true">
+  <div class="drawer-head"><h3>Your cart</h3><button class="icon-btn" id="closeCart" aria-label="Close cart">✕</button></div>
+  <div class="drawer-body" id="drawerBody"></div>
+  <div class="drawer-foot" id="drawerFoot"></div>
+</aside>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="/js/app.js" defer></script>
+</body>
+</html>
